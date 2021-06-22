@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Learn to code by watching others</h1>
+        <p class="header__text">
+          See how experienced developers solve problems in real-time. Watching
+          scripted tutorials is great, but understanding how developers think is
+          invaluable.
+        </p>
+      </header>
+      <div class="plug">
+        <p class="try">
+          <strong>Try it free 7 days</strong> then $20/mo. thereafter
+        </p>
+        <form class="form">
+          <div class="form-row">
+            <input
+              id="first-name"
+              name="first-name"
+              type="text"
+              placeholder="First Name"
+            />
+            <p class="validation first-name">First name cannot be empty</p>
+          </div>
+          <div class="form-row">
+            <input
+              id="last-name"
+              name="last-name"
+              type="text"
+              placeholder="Last Name"
+            />
+            <p class="validation last-name">Last name cannot be empty</p>
+          </div>
+          <div class="form-row">
+            <input
+              id="email"
+              name="email"
+              type="text"
+              placeholder="Email Address"
+            />
+            <p class="validation email">Looks like this is not an email</p>
+          </div>
+          <div class="form-row">
+            <input
+              id="password"
+              name="password"
+              type="password"
+              placeholder="Password"
+            />
+            <p class="validation password">Password cannot be empty</p>
+          </div>
+          <button type="submit">CLAIM YOUR FREE TRIAL</button>
+          <p class="terms-service">
+            By clicking the button, you are agreeing to our
+            <span>Terms and Services</span>
+          </p>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">me</a>.
+      </p>
+    </footer>
+  </body>
+  <script src="form.js"></script>
+</html>

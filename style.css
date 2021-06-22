@@ -1,0 +1,195 @@
+:root {
+  /* COLOURS ----------------------------------------------------------- */
+  --clr-main: hsl(0, 100%, 74%);
+  --clr-button: hsl(154, 59%, 51%);
+  --clr-accent: hsl(248, 32%, 49%);
+  --clr-accent-dark: hsl(249, 10%, 26%);
+  --clr-accent-light: hsl(246, 25%, 77%);
+
+  /* FONTS ------------------------------------------------------------- */
+  --font-primary: "Poppins", sans-serif;
+
+  /* UTILITY ----------------------------------------------------------- */
+  --border-radius: 0.55em;
+  --box-shadow: 0px 0.5em hsla(249, 10%, 26%, 0.2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: url(images/bg-intro-mobile.png);
+  background-size: cover;
+  background-color: var(--clr-main);
+  background-blend-mode: multiply;
+}
+
+body {
+  font-family: var(--font-primary);
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+strong {
+  font-weight: 600;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 90px 24px 50px 24px;
+}
+
+header {
+  margin-bottom: 40px;
+  max-width: 540px;
+}
+
+h1 {
+  vertical-align: top;
+  font-weight: 700;
+  font-size: 1.65rem;
+  margin-bottom: 25px;
+  text-shadow: 0px 1px var(--clr-accent-light);
+}
+
+.plug {
+  width: 100%;
+  max-width: 540px;
+}
+.try {
+  width: 100%;
+  background-color: var(--clr-accent);
+  padding: 1.25em 3.5em;
+  border-radius: var(--border-radius);
+  box-shadow: var(--box-shadow);
+  margin-bottom: 20px;
+}
+
+form {
+  background-color: white;
+  border-radius: var(--border-radius);
+  padding: 10px 25px 30px 25px;
+  box-shadow: var(--box-shadow);
+  font-family: var(--font-primary);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+input {
+  width: 100%;
+  padding: 1.25em;
+  margin-top: 15px;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--clr-accent-light);
+  color: var(--clr-accent-dark);
+  font-weight: 700;
+}
+
+.validation {
+  font-style: italic;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--clr-main);
+  padding-top: 0.5em;
+  text-align: right;
+  display: none;
+}
+
+.error {
+  background-image: url(images/icon-error.svg);
+  background-size: 24px 24px;
+  background-repeat: no-repeat;
+  background-position: 93% center;
+  border: 1px solid var(--clr-main);
+  color: var(--clr-main);
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid var(--clr-accent-dark);
+}
+
+.error:focus {
+  outline: none;
+  border: 2px solid var(--clr-main);
+  color: var(--clr-accent-dark);
+}
+
+button {
+  width: 100%;
+  padding: 1.25em 1em;
+  margin: 15px 0;
+  background-color: var(--clr-button);
+  border-radius: var(--border-radius);
+  border: none;
+  color: white;
+  font-size: 0.95rem;
+  font-weight: 600;
+  box-shadow: inset 0px -0.25em hsla(249, 10%, 26%, 0.2);
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: hsl(154, 59%, 45%);
+}
+
+button:active {
+  background-color: hsl(154, 59%, 60%);
+}
+
+.terms-service {
+  padding: 0 1em;
+  color: var(--clr-accent-light);
+  font-size: 0.7rem;
+}
+
+.terms-service span {
+  color: var(--clr-main);
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+}
+
+a:hover,
+a:focus {
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    background-image: url(images/bg-intro-desktop.png);
+  }
+}
+
+@media only screen and (min-width: 1175px) {
+  main {
+    flex-direction: row;
+    align-items: center;
+    width: 77%;
+    margin: auto;
+    height: 95vh;
+    gap: 2.5em;
+  }
+  header {
+    margin-top: 75px;
+    text-align: left;
+  }
+  h1 {
+    font-size: 3.05rem;
+  }
+}
